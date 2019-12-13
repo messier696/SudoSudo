@@ -27,7 +27,6 @@ public class CheckButton extends JButton {
 			public void mouseClicked(MouseEvent e) {
 				int[][] grid = GridService.view2grid(frame.getPuzzle().getSudoku());
 				int fitness = GridService.evaluateFitness(grid);
-//				setText(Integer.toString(fitness));
 				if( Constances.MAX_FITNESS == fitness ) {
 					setText(Constances.CORRECT);
 				}else {
